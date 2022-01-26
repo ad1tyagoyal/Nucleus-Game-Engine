@@ -78,12 +78,12 @@ public:
 			m_CameraRotationZ -= m_CameraRotationSpeed;
 		
 
-		Nucleus::RendererCommands::SetClearColor({ 0.1f, 0.1f, 0.1f, 1.0f });
 		Nucleus::Renderer::BeginScene();
 
 		m_OrthoCam.SetPosition(m_CameraPosition);
 		m_OrthoCam.SetRotation(m_CameraRotationZ);
 
+		Nucleus::RendererCommands::SetClearColor({ 0.1f, 0.1f, 0.1f, 1.0f });
 		m_Shader->SetUniformMatrix4fv("u_ViewProjectionMat", 1, 0, glm::value_ptr(m_OrthoCam.GetViewProjectionMat()));
 		Nucleus::Renderer::Submit(m_VertexArray);
 
