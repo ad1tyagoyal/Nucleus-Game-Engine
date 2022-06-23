@@ -62,7 +62,6 @@ public:
 	}
 
 	void OnUpdate() override {
-
 		if (Nucleus::Input::IsKeyPressed(NCL_KEY_A))
 			m_CameraPosition.x -= m_CameraMovingSpeed;
 		if(Nucleus::Input::IsKeyPressed(NCL_KEY_D))

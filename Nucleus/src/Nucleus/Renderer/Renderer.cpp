@@ -4,7 +4,7 @@
 namespace Nucleus {
 
 	void Renderer::BeginScene() {
-	
+		RendererCommands::Clear();
 	}
 	
 	void Renderer::EndScene() {
