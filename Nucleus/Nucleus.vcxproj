@@ -140,17 +140,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Nucleus\Renderer\Camera.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
-    <ClInclude Include="src\Nucleus\Renderer\RendererAPI.h" />
-    <ClInclude Include="src\Nucleus\Renderer\RendererCommands.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
-    <ClInclude Include="src\Nucleus\Renderer\Renderer.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
-    <ClInclude Include="src\Nucleus\Renderer\Buffer.h" />
-    <ClInclude Include="src\Nucleus\Renderer\Shader.h" />
-    <ClInclude Include="src\Nucleus\Renderer\RenderingContext.h" />
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\NclPch.h" />
     <ClInclude Include="src\Nucleus.h" />
     <ClInclude Include="src\Nucleus\Application.h" />
@@ -167,7 +156,19 @@
     <ClInclude Include="src\Nucleus\LayerStack.h" />
     <ClInclude Include="src\Nucleus\Log.h" />
     <ClInclude Include="src\Nucleus\MouseButtonCodes.h" />
+    <ClInclude Include="src\Nucleus\Renderer\Buffer.h" />
+    <ClInclude Include="src\Nucleus\Renderer\Camera.h" />
+    <ClInclude Include="src\Nucleus\Renderer\Renderer.h" />
+    <ClInclude Include="src\Nucleus\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\Nucleus\Renderer\RendererCommands.h" />
+    <ClInclude Include="src\Nucleus\Renderer\RenderingContext.h" />
+    <ClInclude Include="src\Nucleus\Renderer\Shader.h" />
+    <ClInclude Include="src\Nucleus\Renderer\VertexArray.h" />
     <ClInclude Include="src\Nucleus\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -585,19 +586,8 @@
     <ClInclude Include="vendor\glm\glm\vec3.hpp" />
     <ClInclude Include="vendor\glm\glm\vec4.hpp" />
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
-    <ClInclude Include="src\Nucleus\Renderer\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Nucleus\Renderer\Camera.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\RendererAPI.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\RendererCommands.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\Renderer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\Buffer.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\Shader.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\NclPch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
@@ -607,9 +597,19 @@
     <ClCompile Include="src\Nucleus\Layer.cpp" />
     <ClCompile Include="src\Nucleus\LayerStack.cpp" />
     <ClCompile Include="src\Nucleus\Log.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\Camera.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\RendererCommands.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Nucleus\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\Nucleus\Renderer\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
