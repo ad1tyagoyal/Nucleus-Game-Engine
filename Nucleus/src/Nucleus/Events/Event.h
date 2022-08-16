@@ -24,7 +24,7 @@ namespace Nucleus {
 		EventCategoryMouseButton = BIT(4)
 	};
 
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticEventType() { return EventType::type; }\
+#define EVENT_CLASS_TYPE(type) static EventType GetStaticEventType() { return EventType::##type; }\
 								virtual EventType GetEventType() const override { return GetStaticEventType(); }\
 								virtual const char* GetEventName() const override { return #type; }
 

@@ -112,10 +112,6 @@ class SandBoxApplication : public Nucleus::Application {
 public:
 	SandBoxApplication() {
 		PushLayer(new ExampleLayer());
-		NCL_ERROR("Error");
-		NCL_WARN("Warn");
-		NCL_INFO("Info");
-		NCL_TRACE("trace");
 	}
 
 	~SandBoxApplication () {
